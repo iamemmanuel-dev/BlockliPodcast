@@ -3,7 +3,7 @@ import { useNavigation } from '@react-navigation/native'
 import Section from '../../../../utilities/Section'
 import SectionTitleView from '../../../../utilities/SectionTitleView'
 import { PODCAST_IMAGES } from '../../../../data'
-import globalStyles from '../../../../Globals/styles'
+import globalStyles from '../../../../globals/styles'
 import { styles } from './styles'
 
 const PodcastSection = () => {
