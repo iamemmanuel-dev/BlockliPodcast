@@ -1,6 +1,11 @@
 import { Text } from 'react-native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 
+import HomeScreen from '../../screens/Home'
+import DiscoverScreen from '../../screens/Discover'
+import LibraryScreen from '../../screens/Library'
+import ProfileScreen from '../../screens/Profile'
+
 import {
   CompassIcon,
   HomeIcon,
@@ -35,25 +40,25 @@ const TabNavigator = () => {
     <Tab.Navigator screenOptions={({ route }) => screenOptions(route)}>
       <Tab.Screen
         name='Home'
-        component={() => <></>}
+        component={HomeScreen}
         options={{ tabBarIcon: ({ color }) => <HomeIcon color={color} /> }}
       />
 
       <Tab.Screen
         name='Discover'
-        component={() => <></>}
+        component={DiscoverScreen}
         options={{ tabBarIcon: ({ color }) => <CompassIcon color={color} /> }}
       />
 
       <Tab.Screen
         name='Library'
-        component={() => <></>}
+        component={LibraryScreen}
         options={{ tabBarIcon: ({ color }) => <ListIcon color={color} /> }}
       />
 
       <Tab.Screen
         name='Profile'
-        component={() => <></>}
+        component={ProfileScreen}
         options={{ tabBarIcon: ({ color }) => <UserIcon color={color} /> }}
       />
     </Tab.Navigator>
