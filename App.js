@@ -1,7 +1,10 @@
+import 'react-native-gesture-handler'
 import { useEffect } from 'react'
 import * as SplashScreen from 'expo-splash-screen'
 import { useFonts } from 'expo-font'
 import { StatusBar } from 'expo-status-bar'
+
+import RootNavigator from './src/navigation/rootNavigator'
 
 SplashScreen.preventAutoHideAsync()
 
@@ -30,6 +33,7 @@ export default function App() {
   return (
     <>
       <StatusBar translucent />
+      <RootNavigator />
     </>
   )
 }
