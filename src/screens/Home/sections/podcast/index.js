@@ -8,7 +8,7 @@ import { styles } from './styles'
 
 const PodcastSection = () => {
   const navigation = useNavigation()
-  const onTapOnSeeAll = () => {}
+  const onTapOnSeeAll = () => navigation.navigate('AllPodcastsScreen')
 
   const renderPodcasts = ({ item }) => (
     <Pressable key={item.id} style={styles.podcast}>
