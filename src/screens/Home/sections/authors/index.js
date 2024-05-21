@@ -8,7 +8,8 @@ import { styles } from './styles'
 
 const AuthorsSection = () => {
   const navigation = useNavigation()
-  const onTapOnSeeAll = () => {}
+  const onTapOnSeeAll = () =>
+    navigation.navigate('EpisodesAndAuthorsScreen', { origin: 'Authors' })
 
   const renderAuthors = ({ item }) => (
     <Pressable key={item.id} style={styles.author}>

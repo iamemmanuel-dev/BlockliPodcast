@@ -11,7 +11,8 @@ const EpisodesSection = () => {
     <Podcast isLastItem={index === 2} />
   )
 
-  const onTapOnSeeAll = () => {}
+  const onTapOnSeeAll = () =>
+    navigation.navigate('EpisodesAndAuthorsScreen', { origin: 'Episodes' })
 
   return (
     <Section>
