@@ -5,7 +5,7 @@ import theme from '../../theme'
 export const styles = StyleSheet.create({
   screen: {
     flex: 1,
-    backgroundColor: theme.grey2,
+    backgroundColor: theme.white,
     paddingHorizontal: metrics.SCREEN_HORIZONTAL_PADDING,
   },
 })

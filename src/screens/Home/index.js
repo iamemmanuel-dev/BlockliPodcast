@@ -1,11 +1,20 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import { FlatList } from 'react-native'
+import Screen from '../../utilities/Screen'
+import HeaderSection from './sections/headerSection'
 
 const HomeScreen = () => {
   return (
-    <View>
-      <Text>HomeScreen</Text>
-    </View>
+    <Screen>
+      <FlatList
+        data={[1]}
+        ListHeaderComponent={
+          <>
+            <HeaderSection />
+          </>
+        }
+        renderItem={() => <></>}
+      />
+    </Screen>
   )
 }
 
