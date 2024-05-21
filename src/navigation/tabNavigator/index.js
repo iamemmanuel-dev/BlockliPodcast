@@ -1,6 +1,12 @@
 import { Text } from 'react-native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 
+import {
+  CompassIcon,
+  HomeIcon,
+  ListIcon,
+  UserIcon,
+} from '../../../assets/appIcons'
 import theme from '../../theme'
 
 const TabNavigator = () => {
@@ -30,25 +36,25 @@ const TabNavigator = () => {
       <Tab.Screen
         name='Home'
         component={() => <></>}
-        options={{ tabBarIcon: ({ color }) => <></> }}
+        options={{ tabBarIcon: ({ color }) => <HomeIcon color={color} /> }}
       />
 
       <Tab.Screen
         name='Discover'
         component={() => <></>}
-        options={{ tabBarIcon: ({ color }) => <></> }}
+        options={{ tabBarIcon: ({ color }) => <CompassIcon color={color} /> }}
       />
 
       <Tab.Screen
         name='Library'
         component={() => <></>}
-        options={{ tabBarIcon: ({ color }) => <></> }}
+        options={{ tabBarIcon: ({ color }) => <ListIcon color={color} /> }}
       />
 
       <Tab.Screen
         name='Profile'
         component={() => <></>}
-        options={{ tabBarIcon: ({ color }) => <></> }}
+        options={{ tabBarIcon: ({ color }) => <UserIcon color={color} /> }}
       />
     </Tab.Navigator>
   )
