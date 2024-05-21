@@ -1,13 +1,15 @@
 import { Text } from 'react-native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 
+import theme from '../../theme'
+
 const TabNavigator = () => {
   const Tab = createBottomTabNavigator()
 
   const screenOptions = route => ({
     headerShown: false,
-    tabBarActiveTintColor: 'red',
-    tabBarInactiveTintColor: 'blue',
+    tabBarActiveTintColor: theme.primary,
+    tabBarInactiveTintColor: theme.grey1,
 
     tabBarLabel: ({ focused }) => (
       <Text
@@ -15,7 +17,7 @@ const TabNavigator = () => {
           family: focused ? 'Urbanist_Bold' : 'Urbanist_Medium',
           fontSize: 10,
           lineHeight: 16,
-          color: 'grey',
+          color: focused ? theme.primary : theme.grey1,
         }}
       >
         {route.name}
