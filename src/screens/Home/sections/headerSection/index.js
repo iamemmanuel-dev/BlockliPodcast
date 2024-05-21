@@ -6,7 +6,7 @@ import { styles } from './styles'
 
 const HeaderSection = () => {
   return (
-    <Section>
+    <Section style={styles.headerSection}>
       <View style={styles.headerView}>
         <View style={styles.greetingView}>
           <View style={styles.userImageView}>

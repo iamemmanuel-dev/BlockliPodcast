@@ -1,5 +1,6 @@
 import { StyleSheet } from 'react-native'
 import metrics from '../../metrics'
+import theme from '../../theme'
 
 export const styles = StyleSheet.create({
   sectionTitleView: {

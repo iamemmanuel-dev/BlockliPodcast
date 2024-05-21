@@ -1,7 +1,12 @@
 import { StyleSheet } from 'react-native'
+import metrics from '../../../../metrics'
 import theme from '../../../../theme'
 
 export const styles = StyleSheet.create({
+  headerSection: {
+    paddingHorizontal: metrics.SCREEN_HORIZONTAL_PADDING,
+  },
+
   headerView: {
     flexDirection: 'row',
     alignItems: 'center',

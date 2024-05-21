@@ -1,6 +1,7 @@
 import { FlatList } from 'react-native'
 import Screen from '../../utilities/Screen'
 import HeaderSection from './sections/headerSection'
+import PodcastSection from './sections/podcast'
 
 const HomeScreen = () => {
   return (
@@ -12,7 +13,11 @@ const HomeScreen = () => {
             <HeaderSection />
           </>
         }
-        renderItem={() => <></>}
+        renderItem={() => (
+          <>
+            <PodcastSection />
+          </>
+        )}
       />
     </Screen>
   )
