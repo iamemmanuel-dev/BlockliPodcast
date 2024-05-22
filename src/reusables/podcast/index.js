@@ -1,11 +1,16 @@
-import { View, Text, Image } from 'react-native'
+import { View, Text, Image, Pressable } from 'react-native'
+import { useNavigation } from '@react-navigation/native'
 import PodcastPlayAndActionsView from '../podcastPlayAndActions'
 import metrics from '../../metrics'
 import { styles } from './styles'
 
 const Podcast = props => {
+  const navigation = useNavigation()
+  const onTapOnPodcast = () => navigation.navigate('PodcastDetailsScreen')
+
   return (
-    <View
+    <Pressable
+      onPress={onTapOnPodcast}
       style={[
         styles.podcast,
         { marginBottom: props.isLastItem ? 0 : metrics.BASE_GAP },
@@ -27,7 +32,7 @@ const Podcast = props => {
 
         <PodcastPlayAndActionsView />
       </View>
-    </View>
+    </Pressable>
   )
 }
 

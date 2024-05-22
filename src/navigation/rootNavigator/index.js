@@ -5,6 +5,7 @@ import TabNavigator from '../tabNavigator'
 import AllPodcastsScreen from '../../screens/AllPodcast'
 import EpisodesAndAuthorsScreen from '../../screens/EpisodesAndAuthors'
 import PlayerScreen from '../../screens/Player'
+import PodcastDetailsScreen from '../../screens/PodcastDetails'
 
 const RootNavigator = () => {
   const Stack = createNativeStackNavigator()
@@ -26,6 +27,11 @@ const RootNavigator = () => {
           options={{
             presentation: 'containedModal',
           }}
+        />
+
+        <Stack.Screen
+          name='PodcastDetailsScreen'
+          component={PodcastDetailsScreen}
         />
       </Stack.Navigator>
     </NavigationContainer>
