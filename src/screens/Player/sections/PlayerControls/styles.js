@@ -2,6 +2,10 @@ import { StyleSheet } from 'react-native'
 import theme from '../../../../theme'
 
 export const styles = StyleSheet.create({
+  sliderView: {
+    marginBottom: 50,
+  },
+
   playerControlsView: {
     flexDirection: 'row',
     alignItems: 'center',

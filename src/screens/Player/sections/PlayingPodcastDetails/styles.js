@@ -1,13 +1,14 @@
 import { StyleSheet } from 'react-native'
+import metrics from '../../../../metrics'
 import theme from '../../../../theme'
 
 export const styles = StyleSheet.create({
   podcastDetailsView: {
-    flex: 1,
+    marginBottom: 20,
   },
 
   podcastImageView: {
-    height: '60%',
+    height: metrics.SCREEN_HEIGHT * 0.45,
     marginBottom: 20,
   },
 
