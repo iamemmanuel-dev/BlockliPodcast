@@ -1,4 +1,5 @@
 import { View, Pressable } from 'react-native'
+import { useNavigation } from '@react-navigation/native'
 import { Ionicons } from '@expo/vector-icons'
 import { AddItemIcon, DownloadIcon } from '../../../assets/appIcons'
 import PodcastPlayButton from '../PodcastPlayButton'
@@ -7,7 +8,8 @@ import theme from '../../theme'
 import { styles } from './styles'
 
 const PodcastPlayAndActionsView = () => {
-  const onPlay = () => {}
+  const navigation = useNavigation()
+  const onPlay = () => navigation.navigate('PlayerScreen')
 
   return (
     <View style={styles.actionsView}>

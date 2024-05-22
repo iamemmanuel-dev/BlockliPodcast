@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import TabNavigator from '../tabNavigator'
 import AllPodcastsScreen from '../../screens/AllPodcast'
 import EpisodesAndAuthorsScreen from '../../screens/EpisodesAndAuthors'
+import PlayerScreen from '../../screens/Player'
 
 const RootNavigator = () => {
   const Stack = createNativeStackNavigator()
@@ -17,6 +18,14 @@ const RootNavigator = () => {
         <Stack.Screen
           name='EpisodesAndAuthorsScreen'
           component={EpisodesAndAuthorsScreen}
+        />
+
+        <Stack.Screen
+          name='PlayerScreen'
+          component={PlayerScreen}
+          options={{
+            presentation: 'containedModal',
+          }}
         />
       </Stack.Navigator>
     </NavigationContainer>
