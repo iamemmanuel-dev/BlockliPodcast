@@ -91,4 +91,23 @@ export const styles = StyleSheet.create({
     lineHeight: 20,
     color: theme.grey8,
   },
+
+  listDot: {
+    width: 3,
+    height: 3,
+    borderRadius: 100,
+    backgroundColor: theme.grey8,
+    marginRight: 12,
+  },
+
+  listContainer: {
+    marginVertical: 20,
+    marginLeft: 15,
+  },
+
+  list: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 10,
+  },
 })
